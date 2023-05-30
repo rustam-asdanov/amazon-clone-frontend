@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import MyPosts from "./MyPosts";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -14,8 +15,9 @@ const Header = () => {
       {!show && <p>Not Clicked</p>}
       {show && <div>Clicked</div>}
       <button type="button" onClick={toggleShow}>
-        Qehbe
+        Click
       </button>
+      <MyPosts />
     </header>
   );
 };

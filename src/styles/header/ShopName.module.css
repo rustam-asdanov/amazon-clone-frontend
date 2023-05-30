@@ -1,0 +1,14 @@
+div.title {
+  width: 30%;
+  display: inline-block;
+  background-color: red;
+}
+
+div.title > h1 {
+  display: inline-block;
+  background-color: orange;
+}
+
+img.shop-icon {
+  width: 20%;
+}

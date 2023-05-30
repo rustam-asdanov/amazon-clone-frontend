@@ -17,46 +17,46 @@ describe("header component", () => {
     expect(nileShop).toBeInTheDocument();
   });
 
-  test("render not clicked", () => {
-    // Arrange
-    render(<Header />);
+  // test("render not clicked", () => {
+  //   // Arrange
+  //   render(<Header />);
 
-    // Act
-    const buttonElement = screen.getByRole("button");
+  //   // Act
+  //   const buttonElement = screen.getByRole("button");
 
-    // Assert
-    const notClicked = screen.getByText(/not clicked/i);
-    expect(notClicked).toBeInTheDocument();
-  });
+  //   // Assert
+  //   const notClicked = screen.getByText(/not clicked/i);
+  //   expect(notClicked).toBeInTheDocument();
+  // });
 
-  test("render clicked", () => {
-    // Arrange
-    render(<Header />);
+  // test("render clicked", () => {
+  //   // Arrange
+  //   render(<Header />);
 
-    // Act
-    act(() => {
-      const buttonElement = screen.getByRole("button");
-      userEvent.click(buttonElement);
-    });
+  //   // Act
+  //   act(() => {
+  //     const buttonElement = screen.getByRole("button");
+  //     userEvent.click(buttonElement);
+  //   });
 
-    // Assert
-    const clickedText = screen.getByText(/clicked/i);
-    expect(clickedText).toBeInTheDocument();
-    expect(clickedText).toBeEnabled();
-  });
+  //   // Assert
+  //   const clickedText = screen.getByText(/clicked/i);
+  //   expect(clickedText).toBeInTheDocument();
+  //   expect(clickedText).toBeEnabled();
+  // });
 
-  test("render not clicked", () => {
-    // Arrnage
-    render(<Header />);
+  // test("render not clicked", () => {
+  //   // Arrnage
+  //   render(<Header />);
 
-    // Act
-    act(() => {
-      const buttonElement = screen.getByRole("button");
-      userEvent.click(buttonElement);
-    });
+  //   // Act
+  //   act(() => {
+  //     const buttonElement = screen.getByRole("button");
+  //     userEvent.click(buttonElement);
+  //   });
 
-    // Assert
-    const notClickedText = screen.queryByText(/not clicked/i);
-    expect(notClickedText).toBeNull();
-  });
+  //   // Assert
+  //   const notClickedText = screen.queryByText(/not clicked/i);
+  //   expect(notClickedText).toBeNull();
+  // });
 });

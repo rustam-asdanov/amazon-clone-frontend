@@ -14,4 +14,13 @@ describe("cart component", () => {
     expect(cartIconElement).toBeInTheDocument();
     expect(cartIconElement.src).toContain(cart_icon);
   });
+
+  test("renders a non-empty cart amount", () => {
+    // Arrange
+    const { getByTestId } = render(<Cart />);
+    const cartAmountElement = getByTestId("cart-amount");
+
+    // Assert
+    expect(cartAmountElement.textContent.trim).not.toBe("");
+  });
 });

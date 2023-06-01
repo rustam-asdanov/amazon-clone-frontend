@@ -18,10 +18,10 @@ const Header = (props) => {
 
   return (
     <nav className={`${props.class} ${styles.navbar}`}>
-      <ShopName />
-      <SearchBar />
-      <SignIn />
-      <Cart />
+      <ShopName data-testid="shop-name" />
+      <SearchBar data-testid="search-bar" />
+      <SignIn data-testid="sign-in" />
+      <Cart data-testid="cart" />
       {/* {!show && <p>Not Clicked</p>}
       {show && <div>Clicked</div>}
       <button type="button" onClick={toggleShow}>

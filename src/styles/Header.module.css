@@ -1,0 +1,42 @@
+nav.navbar {
+  padding: 10px 20px;
+  justify-content: center;
+}
+
+nav.navbar > * {
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 1060px) {
+  nav.navbar {
+    padding: 10px 20px;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  nav.navbar {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  nav.navbar > * {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  nav.navbar {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  nav.navbar > * {
+    width: 100%;
+    font-size: 1rem;
+  }
+}

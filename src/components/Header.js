@@ -7,6 +7,7 @@ import ShopName from "./header/ShopName";
 import SearchBar from "./header/SearchBar";
 import Cart from "./header/Cart";
 import SignIn from "./header/SignIn";
+import styles from "../styles/Header.module.css";
 
 const Header = (props) => {
   const [show, setShow] = useState(false);
@@ -16,7 +17,7 @@ const Header = (props) => {
   };
 
   return (
-    <nav className={`${props.class} navbar`}>
+    <nav className={`${props.class} ${styles.navbar}`}>
       <ShopName />
       <SearchBar />
       <SignIn />

@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <header>
+    <nav className="navbar navbar-dark">
       <ShopName />
       <SearchBar />
       <SignIn />
@@ -27,7 +27,7 @@ const Header = () => {
         Click
       </button>
       <MyPosts />
-    </header>
+    </nav>
   );
 };
 

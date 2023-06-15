@@ -1,18 +1,25 @@
 import React from "react";
 import right_arrow from "../../assets/right-arrow.png";
+import styles from "../../styles/body/CategoryNav.module.css";
 
-const CategoryNav = () => {
+const CategoryNav = (props) => {
   return (
     <nav>
       <ul>
-        <li
-          onClick={() => changeCategory("laptop")}
-          className={category === "laptop" && styles["clicked"]}
-        >
-          {category === "laptop" && <img src={right_arrow} alt="right arrow" />}
-          <span>Laptop</span>
-        </li>
-        <li onClick={() => changeCategory("smartphone")}>Smartphone</li>
+        {props.categoryList.map((category) => {
+          return (
+            <li onClick={() => props.changeCategory(category)}>
+              {/* {
+               {props.selectedCategory === "laptop" && (
+            <img src={right_arrow} alt="right arrow" />
+          )} } */}
+              {props.selectedCategory === category && (
+                <img src={right_arrow} alt="right arrow" />
+              )}
+              <span>{category}</span>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );

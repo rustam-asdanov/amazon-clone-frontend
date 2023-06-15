@@ -9,10 +9,6 @@ const CategoryNav = (props) => {
         {props.categoryList.map((category) => {
           return (
             <li onClick={() => props.changeCategory(category)}>
-              {/* {
-               {props.selectedCategory === "laptop" && (
-            <img src={right_arrow} alt="right arrow" />
-          )} } */}
               {props.selectedCategory === category && (
                 <img src={right_arrow} alt="right arrow" />
               )}

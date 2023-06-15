@@ -24,7 +24,7 @@ const Body = () => {
           selectedCategory={category}
           categoryList={categoryList}
         />
-        <Products category={category} />
+        <Products category={category} products={data[0][category]} />
       </div>
     </div>
   );

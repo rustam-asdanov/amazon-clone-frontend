@@ -1,0 +1,18 @@
+div.products {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1024px) {
+  div.products {
+    grid-template-columns: 30% 30% 30%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.products {
+    grid-template-columns: 45% 45%;
+  }
+}

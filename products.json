@@ -1,0 +1,76 @@
+{
+  "laptops": [
+    {
+      "brand": "Dell",
+      "model": "XPS 15",
+      "price": 1899.99,
+      "ram": "16GB",
+      "storage": "512GB SSD"
+    },
+    {
+      "brand": "Apple",
+      "model": "MacBook Pro",
+      "price": 2399.99,
+      "ram": "16GB",
+      "storage": "1TB SSD"
+    },
+    {
+      "brand": "HP",
+      "model": "Envy x360",
+      "price": 1099.99,
+      "ram": "8GB",
+      "storage": "256GB SSD"
+    },
+    {
+      "brand": "Lenovo",
+      "model": "ThinkPad X1 Carbon",
+      "price": 1699.99,
+      "ram": "16GB",
+      "storage": "512GB SSD"
+    },
+    {
+      "brand": "Asus",
+      "model": "ROG Zephyrus G14",
+      "price": 1399.99,
+      "ram": "16GB",
+      "storage": "1TB SSD"
+    }
+  ],
+  "smartphones": [
+    {
+      "brand": "Apple",
+      "model": "iPhone 13",
+      "price": 999.99,
+      "display": "6.1-inch",
+      "storage": "128GB"
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S21",
+      "price": 899.99,
+      "display": "6.2-inch",
+      "storage": "128GB"
+    },
+    {
+      "brand": "Google",
+      "model": "Pixel 6",
+      "price": 799.99,
+      "display": "6.4-inch",
+      "storage": "128GB"
+    },
+    {
+      "brand": "OnePlus",
+      "model": "9 Pro",
+      "price": 899.99,
+      "display": "6.7-inch",
+      "storage": "256GB"
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Mi 11",
+      "price": 699.99,
+      "display": "6.81-inch",
+      "storage": "128GB"
+    }
+  ]
+}

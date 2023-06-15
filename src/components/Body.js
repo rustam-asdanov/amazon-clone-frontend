@@ -1,20 +1,22 @@
-import React from "react";
-import Cart from "./body/Cart";
+import React, { useState } from "react";
 import styles from "../styles/Body.module.css";
+import Products from "./body/Products";
+import CategoryNav from "./body/CategoryNav";
 
 const Body = () => {
+  const [category, setCategory] = useState("laptop");
+
+  function changeCategory(value) {
+    setCategory(value);
+  }
+
   return (
     <div className={styles["body"]}>
-      <h1>I am Body</h1>
-      <nav>
-        <ul>
-          <li>laptop</li>
-          <li>Smartphone</li>
-        </ul>
-      </nav>
-      <section>
-        <Cart />
-      </section>
+      <h1>Top sale</h1>
+      <div>
+        <CategoryNav />
+        <Products category={category} />
+      </div>
     </div>
   );
 };

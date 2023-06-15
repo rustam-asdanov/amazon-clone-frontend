@@ -1,0 +1,22 @@
+div.body {
+  position: relative;
+  top: 20px;
+  left: 10%;
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+div.body nav {
+  background-color: antiquewhite;
+}
+
+div.body nav ul li {
+  transform: scale(1);
+  background-color: transparent;
+  transition: 500ms transform;
+}
+
+div.body nav ul li:hover {
+  transform: scale(1.2);
+}
